@@ -1,4 +1,5 @@
 # Cricket Game
+# For The Tkinter Of the same Go Down
 
 ## Overview
 
@@ -56,3 +57,88 @@ This is a simple text-based Cricket Game written in Python. The player can play 
 * Add GUI for better user interaction.
 * Add multiplayer support.
 * Enhance the toss mechanism to allow player choice.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Cricket Game
+
+A graphical cricket game built using Python's Tkinter library. This game allows a player to compete against the computer in a simple yet exciting game of cricket.
+
+## 🚀 Features
+
+* 🏏 User vs Computer Cricket Gameplay.
+* 🎲 Choice of batting or bowling after winning the toss.
+* ⚡ 2 Wickets and 2 Overs (12 balls) per innings.
+* 📊 Real-time score updates.
+* 🏆 Result display with win/loss message.
+* 💾 Match results stored in a MySQL database.
+
+## ✅ Requirements
+
+* Python 3.x
+* Tkinter (usually comes pre-installed with Python)
+* MySQL Server
+* MySQL Connector for Python
+
+## ⚙️ Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. **Install the MySQL Connector for Python:**
+
+   ```bash
+   pip install mysql-connector-python
+   ```
+
+3. **Ensure that your MySQL server is running and create a database named `cric`:**
+
+   ```sql
+   CREATE DATABASE cric;
+   ```
+
+4. **Set your MySQL credentials in the code (username, password, database).**
+
+## 🎮 How to Play
+
+1. Run the game using:
+
+   ```bash
+   python cricket_game.py
+   ```
+2. Enter your team name.
+3. Choose heads or tails for the toss.
+4. If you win the toss, choose to bat or bowl first.
+5. During batting:
+
+   * Enter a number between 1 and 6 for each ball.
+   * If your number and the computer's number are different, your number adds to your score.
+   * If they are the same, you lose a wicket.
+6. During bowling:
+
+   * Enter a number between 1 and 6.
+   * If your number and the computer's number are different, the computer's number adds to its score.
+   * If they are the same, the computer loses a wicket.
+7. Each player has 2 wickets and 2 overs (12 balls) per innings.
+8. The player with the highest score at the end wins.
+
+## 🗄️ Database Storage
+
+* The game stores match results in a MySQL table named after your team and the computer (e.g., `YourTeam_vs_computer`).
+* After the game ends, you will be asked if you want to clear the table (delete the match results).
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use and modify it.
+
+## 💡 Acknowledgements
+
+* Developed using Python's Tkinter for GUI.
+* MySQL for database management.
+
