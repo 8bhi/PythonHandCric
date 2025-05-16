@@ -1,5 +1,5 @@
 # Cricket Game
-# For The Tkinter Of the same Go Down
+## For The Tkinter version of the same Go Down
 
 ## Overview
 
